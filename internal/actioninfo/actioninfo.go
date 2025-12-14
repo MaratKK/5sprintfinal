@@ -15,7 +15,7 @@ func Info(dataset []string, dp DataParser) {
 	// TODO: реализовать функцию
 	for _, data := range dataset {
 		if err := dp.Parse(data); err != nil {
-			log.Printf("parse error: %v (row=%q)", err, data)
+			log.Printf("parse error: %v (data=%q)", err, data)
 			continue
 		}
 		info, err := dp.ActionInfo()
