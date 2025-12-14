@@ -20,7 +20,7 @@ func Info(dataset []string, dp DataParser) {
 		}
 		info, err := dp.ActionInfo()
 		if err != nil {
-			log.Printf("action info error: %v (row=%q)", err, data)
+			log.Printf("action info error: %v (data=%q)", err, data)
 			continue
 		}
 		fmt.Println(info)
